@@ -1,4 +1,5 @@
 import tkinter as tk
+import funcoes
 
 class Tela():
     def __init__(self, master):
@@ -43,8 +44,3 @@ class Tela():
         self.bnt_adc.grid(row=4,rowspan=2, column=4)
         self.bnt_result = tk.Button(self.janela, text='=', width=8, height=4)
         self.bnt_result.grid(row=5, column=2)
-
-
-calculadora = tk.Tk()
-Tela(calculadora)
-calculadora.mainloop()
